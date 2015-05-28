@@ -1,0 +1,444 @@
+//********************************************************************//
+//Variables
+//********************************************************************//
+$bgblue: #22a7f0;
+$textcolor: #333;
+$bgwhite: #fff;
+$grey: #888;
+$lightgrey: #e8e8e8;
+* {
+    //outline: orange 1px dotted;
+}
+
+html,
+main,
+section {
+    -webkit-font-smoothing: antialiased;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi),
+only screen and ( min-resolution: 1.25dppx) {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+    color: $textcolor;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    line-height: 1.8;
+    height: 100%;
+    padding-top: 5em;
+}
+
+.container,
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+}
+
+nav {
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            a {
+                display: block;
+                color: $grey;
+                font-size: 1.5em;
+                padding: 1em;
+                border-radius: 0;
+                border-right: none;
+                border-top: 0.1em solid $lightgrey;
+                margin: 0;
+                text-align: center;
+                font-family: "source_sans_prolight";
+                font-weight: 900;
+                text-decoration: none;
+                letter-spacing: 1px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.carousel-indicators {
+    margin: 0;
+    position: absolute;
+    bottom: initial;
+    left: initial;
+    width: auto;
+    right: 0;
+    padding-right: 10px;
+    margin-top: 6.5em;
+    li {
+        display: block;
+        border: 1px solid $grey;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.5em;
+    }
+    .active {
+        background-color: $grey;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.5em;
+    }
+}
+
+
+
+.navbar-default .navbar-collapse{
+
+	border: none;
+}
+
+.navbar-toggle{
+
+	border: none;
+}
+
+
+#about-me p {
+    font-size: 1.3em;
+}
+
+#about-me .row {
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+.webskills-container {
+
+    li {
+        font-weight: bold;
+        font-size: 1.2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        display: inline-block;
+    }
+}
+
+.fx-bg-container img, .fx-bg-container p{
+	
+	cursor: pointer;
+
+}
+
+.project-container {
+    
+    height: 48em;
+    overflow: hidden;
+
+    @media (min-width: 600px){
+
+		height: 60em;
+	}
+}
+
+.project {
+    height: 0;
+    opacity: 0;
+}
+
+.project .col-md-6,
+.project-image img {
+    height: 0;
+}
+
+.project-image {
+    position: absolute;
+    bottom: -20em;
+    width: 100%;
+}
+
+.active-project {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    height: 100%;
+    position: relative;
+}
+
+.active-project h2{
+
+	margin-bottom: 0.5em;
+}
+
+.active-project p{
+
+	margin-bottom: 1em;
+}
+
+
+.active-project img{
+
+	height: 18em;
+	width: 25em;
+
+    @media screen and (min-width: 600px) {
+        
+        height: auto;
+        width: 50em;
+    }
+
+}
+
+.active-project .project-image a{
+
+	display: inline-block;
+}
+
+
+.active-project .col-md-6 {
+    height: auto;
+}
+
+.active-project .project-image {
+    bottom: 0;
+    transition: bottom 1s ease-in-out;
+}
+
+.bg-grey {
+    background-color: $grey;
+    color: white;
+}
+
+.bg-blue {
+    background-color: $bgblue;
+    color: white;
+}
+
+.navMenuCollapse {
+    clear: both;
+}
+
+.navbar-collapse {
+    float: none;
+    margin: 0!important;
+    max-height: inherit!important;
+    padding: 0;
+}
+
+.navbar-fixed-top {
+    border-width: 0;
+}
+
+.navbar {
+    background: $bgwhite;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-toggle {
+
+    margin-top: 1em;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+
+	background-color: white;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: $grey;
+    width: 2em;
+    height: 3px;
+    &:not(:last-child){
+    margin-bottom: 0.5em;
+	}
+
+}
+
+.navbar-brand {
+    display: block;
+    padding: 0;
+    font-size: 2.5em;
+    line-height: 2.5em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    margin-left: 0.5em;
+    img {
+        width: 2.5em;
+    }
+}
+
+.navbar-right {
+    margin-right: 0;
+}
+
+.navbar-nav > li > a {
+    line-height: initial;
+}
+
+@media (min-width: 768px) {
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+}
+
+.btn {
+    color: black;
+}
+
+h1 {
+    color: $bgwhite;
+    line-height: 1em;
+    margin-bottom: 0;
+    font-family: "source_sans_prolight";
+    font-weight: bolder;
+}
+
+.intro-text p {
+    color: $bgwhite;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.intro-text p:nth-child(2) {
+    margin: 0 0 1em 0;
+    font-size: 1.3em;
+}
+
+.intro-text a {
+    color: white;
+}
+
+h2 {
+    font-family: "source_sans_prolight";
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.fx-bg {
+    background: url('../images/project.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    color: $bgwhite;
+}
+
+.scrolling {
+    min-height: 100%;
+}
+
+.icon-sportzweekly {
+    font-family: "code_boldregular";
+    font-size: 1.5em;
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+
+    @media (min-width: 600px){
+
+		font-size: 2.5em;
+	}
+}
+
+.row-eq-height{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 1em;
+	height: 20em;
+}
+
+.logo{
+
+	width: 12.5em;
+	margin: auto 0;
+	padding: 0.5em;
+
+	:hover{
+
+		cursor: pointer;
+	}
+	
+	@media (min-width: 600px){
+
+		width: 25em;
+	}
+
+	a{
+
+		display: block;
+
+		:hover{
+
+			color: white;
+		}
+
+		:visited: white;
+	}
+}
+
+.bj-logo{
+
+	width: 8em;
+
+    @media (min-width: 600px){
+
+		width: 10em;
+	}
+}
+
+footer {
+    display: block;
+    p {
+        font-size: 1.5em;
+    }
+    .social-links-container {
+        padding-bottom: 1.5em;
+        padding-top: 1.5em;
+    }
+    .social-link a {
+        display: inline-block;
+        color: white;
+        &:visited {
+            color: white;
+        }
+    }
+    .phone-email {
+        padding: 0.5em;
+        a {
+            color: white;
+            font-size: 1.5em;
+            display: block;
+            width: 100%;
+            margin: 0 0.5em 0 0.5em;
+
+            &:visited{
+
+                color: white;
+            }
+
+            @media (min-width: 600px){
+
+            	display: inline;
+            	width: initial;
+            	&:not(:last-child):after {
+                border-right: 1px solid white;
+                content: " ";
+                position: relative;
+                margin: 0 0.5em 0 0.5em;
+            	}
+            }
+        }
+    }
+    .col-md-6 {
+        padding: 0;
+    }
+}
