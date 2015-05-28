@@ -1,9 +1,8 @@
-//********************************************************************//
-//Variables
-//********************************************************************//
-$bgblue: #22a7f0;
+//Custom Styles for portfolio website - rakeshmistry.co.nz
+
+$blue: #22a7f0;
 $textcolor: #333;
-$bgwhite: #fff;
+$white: #fff;
 $grey: #888;
 $lightgrey: #e8e8e8;
 * {
@@ -38,8 +37,41 @@ body {
     padding: 0;
 }
 
+h1 {
+    color: $white;
+    line-height: 1em;
+    margin-bottom: 0;
+    font-family: "source_sans_prolight";
+    font-weight: bolder;
+}
+
+
+h2 {
+    font-family: "source_sans_prolight";
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
 a {
-    color: white;
+    color: $white;
+}
+
+.btn {
+    color: black;
+}
+
+.bg-grey {
+    background-color: $grey;
+    color: $white;
+}
+
+.bg-blue {
+    background-color: $blue;
+    color: $white;
 }
 
 nav {
@@ -69,32 +101,6 @@ nav {
     }
 }
 
-.carousel-indicators {
-    margin: 0;
-    position: absolute;
-    bottom: initial;
-    left: initial;
-    width: auto;
-    right: 0;
-    padding-right: 10px;
-    margin-top: 6.5em;
-    li {
-        display: block;
-        border: 1px solid $grey;
-        width: 20px;
-        height: 20px;
-        margin-bottom: 0.5em;
-    }
-    .active {
-        background-color: $grey;
-        width: 20px;
-        height: 20px;
-        margin-bottom: 0.5em;
-    }
-}
-
-
-
 .navbar-default .navbar-collapse{
 
 	border: none;
@@ -103,120 +109,6 @@ nav {
 .navbar-toggle{
 
 	border: none;
-}
-
-
-#about-me p {
-    font-size: 1.3em;
-}
-
-#about-me .row {
-    padding-top: 1em;
-    padding-bottom: 3em;
-}
-
-.webskills-container {
-
-    li {
-        font-weight: bold;
-        font-size: 1.2em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        display: inline-block;
-    }
-}
-
-.fx-bg-container img, .fx-bg-container p{
-	
-	cursor: pointer;
-
-}
-
-.project-container {
-    
-    height: 48em;
-    overflow: hidden;
-
-    @media (min-width: 600px){
-
-		height: 60em;
-	}
-}
-
-.project {
-    height: 0;
-    opacity: 0;
-}
-
-.project .col-md-6,
-.project-image img {
-    height: 0;
-}
-
-.project-image {
-    position: absolute;
-    bottom: -20em;
-    width: 100%;
-}
-
-.active-project {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    height: 100%;
-    position: relative;
-}
-
-.active-project h2{
-
-	margin-bottom: 0.5em;
-}
-
-.active-project p{
-
-	margin-bottom: 1em;
-}
-
-
-.active-project img{
-
-	height: 18em;
-	width: 25em;
-
-    @media screen and (min-width: 600px) {
-        
-        height: auto;
-        width: 50em;
-    }
-
-}
-
-.active-project .project-image a{
-
-	display: inline-block;
-}
-
-
-.active-project .col-md-6 {
-    height: auto;
-}
-
-.active-project .project-image {
-    bottom: 0;
-    transition: bottom 1s ease-in-out;
-}
-
-.bg-grey {
-    background-color: $grey;
-    color: white;
-}
-
-.bg-blue {
-    background-color: $bgblue;
-    color: white;
-}
-
-.navMenuCollapse {
-    clear: both;
 }
 
 .navbar-collapse {
@@ -231,7 +123,7 @@ nav {
 }
 
 .navbar {
-    background: $bgwhite;
+    background: $white;
     margin-bottom: 0;
 }
 
@@ -242,7 +134,7 @@ nav {
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 
-	background-color: white;
+	background-color: $white;
 }
 
 .navbar-toggle .icon-bar {
@@ -283,20 +175,8 @@ nav {
     }
 }
 
-.btn {
-    color: black;
-}
-
-h1 {
-    color: $bgwhite;
-    line-height: 1em;
-    margin-bottom: 0;
-    font-family: "source_sans_prolight";
-    font-weight: bolder;
-}
-
 .intro-text p {
-    color: $bgwhite;
+    color: $white;
     font-size: 1.5em;
     text-align: center;
 }
@@ -307,17 +187,27 @@ h1 {
 }
 
 .intro-text a {
-    color: white;
+    color: $white;
 }
 
-h2 {
-    font-family: "source_sans_prolight";
-    font-weight: bolder;
+#about-me p {
+    font-size: 1.3em;
 }
 
-p {
-    font-size: 1.2em;
-    text-align: justify;
+#about-me .row {
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+.webskills-container {
+
+    li {
+        font-weight: bold;
+        font-size: 1.2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        display: inline-block;
+    }
 }
 
 .fx-bg {
@@ -327,11 +217,13 @@ p {
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100%;
-    color: $bgwhite;
+    color: $white;
 }
 
-.scrolling {
-    min-height: 100%;
+.fx-bg-container img, .fx-bg-container p{
+	
+	cursor: pointer;
+
 }
 
 .icon-sportzweekly {
@@ -378,10 +270,10 @@ p {
 
 		:hover{
 
-			color: white;
+			color: $white;
 		}
 
-		:visited: white;
+		:visited: $white;
 	}
 }
 
@@ -395,6 +287,106 @@ p {
 	}
 }
 
+.project-container {
+    
+    height: 48em;
+    overflow: hidden;
+
+    @media (min-width: 600px){
+
+		height: 60em;
+	}
+}
+
+.project {
+    height: 0;
+    opacity: 0;
+}
+
+.project .col-md-6,
+.project-image img {
+    height: 0;
+}
+
+.project-image {
+    position: absolute;
+    bottom: -20em;
+    width: 100%;
+}
+
+.carousel-indicators {
+    margin: 0;
+    position: absolute;
+    bottom: initial;
+    left: initial;
+    width: auto;
+    right: 0;
+    padding-right: 10px;
+    margin-top: 6.5em;
+    li {
+        display: block;
+        border: 1px solid $grey;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.5em;
+    }
+    .active {
+        background-color: $grey;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0.5em;
+    }
+}
+
+
+//Javascript Styles Start
+.active-project {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    height: 100%;
+    position: relative;
+}
+
+.active-project h2{
+
+	margin-bottom: 0.5em;
+}
+
+.active-project p{
+
+	margin-bottom: 1em;
+}
+
+
+.active-project img{
+
+	height: 18em;
+	width: 25em;
+
+    @media screen and (min-width: 600px) {
+        
+        height: auto;
+        width: 50em;
+    }
+
+}
+
+.active-project .project-image a{
+
+	display: inline-block;
+}
+
+
+.active-project .col-md-6 {
+    height: auto;
+}
+
+.active-project .project-image {
+    bottom: 0;
+    transition: bottom 1s ease-in-out;
+}
+//Javascript Styles Finish
+
 footer {
     display: block;
     p {
@@ -406,15 +398,15 @@ footer {
     }
     .social-link a {
         display: inline-block;
-        color: white;
+        color: $white;
         &:visited {
-            color: white;
+            color: $white;
         }
     }
     .phone-email {
         padding: 0.5em;
         a {
-            color: white;
+            color: $white;
             font-size: 1.5em;
             display: block;
             width: 100%;
@@ -422,7 +414,7 @@ footer {
 
             &:visited{
 
-                color: white;
+                color: $white;
             }
 
             @media (min-width: 600px){
@@ -430,7 +422,7 @@ footer {
             	display: inline;
             	width: initial;
             	&:not(:last-child):after {
-                border-right: 1px solid white;
+                border-right: 1px solid $white;
                 content: " ";
                 position: relative;
                 margin: 0 0.5em 0 0.5em;
