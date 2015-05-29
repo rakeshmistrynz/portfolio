@@ -7517,7 +7517,7 @@ nav ul {
   margin-right: 0; }
 
 .navbar-nav > li > a {
-  line-height: initial; }
+  line-height: 2em; }
 
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
