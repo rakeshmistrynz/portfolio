@@ -21,11 +21,11 @@
 
 <body>
     <div class="container">
-    	<h1 class="hide">Rakesh Mistry Web Design and Development</h1>
+        <h1 class="hide">Rakesh Mistry Web Design and Development</h1>
         <!-- Header Begin -->
         <header id="header">
             <nav class="navbar navbar-default navbar-fixed-top">
-            	<h2 class="hide">Navigation</h2>
+                <h2 class="hide">Navigation</h2>
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -54,7 +54,7 @@
                         <div class="intro-text text-center white-text">
                             <h1>Rakesh Mistry</h1>
                             <p>Web Developer & Designer</p>
-                            <p>I can't wait to show you my <a href="#project-logos" class=" animated bounce">projects <i class="fa fa-arrow-circle-down"></i></a></p>
+                            <a class="btn btn-default my-btn project-btn" href="#project-logos" role="button">My Projects...</a>
                         </div>
                         <img src="assets/images/web.png" alt="image" class="img-responsive center-block">
                     </div>
@@ -62,16 +62,15 @@
             </section>
             <section id="about-me" class="bg-grey">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="text-center">About Me</h2>
-                        <p class="text-center">
-                            Hi my name is Rakesh Mistry.<br>I have just completed a Diploma in Web Development at Yoobee School of Design in Auckland and currently looking for work opportunities in the web industry.
+                        <p class="text-center col-md-8 col-md-offset-2">
+                            Hi my name is Rakesh Mistry.
+                            <br>I have just completed a Diploma in Web Development at Yoobee School of Design in Auckland and currently looking for a job as a junior web developer.
                         </p>
-                        <p class="text-center">
-                            This website showcases projects I have completed for the Diploma.
-                            <br>If you would like to know more about these projects or other work I have done -
-                            <br><a href="#contact-me" class=" animated bounce">please contact me, it would be great to hear from you!</a>
-                        </p>
+                        <div class="col-md-12">
+                            <a class="btn btn-default my-btn cv-btn" href="RakeshMistryCV.pdf" role="button">Download CV</a>
+                        </div>
                     </div>
                     <div class="col-md-8 col-md-offset-2 webskills-container">
                         <h2 class="text-center">Web Skills</h2>
@@ -87,7 +86,7 @@
                             <li>Responsive Design</li>
                             <li>PHP</li>
                             <li>OOP</li>
-                            <li>MySQL & MySQLi</li>
+                            <li>MySQL</li>
                             <li>Laravel 5</li>
                             <li>CodeIgniter</li>
                             <li>Ajax</li>
@@ -100,20 +99,24 @@
             </section>
             <section id="project-logos" class="row fx-bg">
                 <h2 class="text-center">Projects</h2>
-                <div class="row row-eq-height">
-                    <div class="col-md-3 col-xs-6 logo">
-                        <a href="#1"><img src="assets/images/sqlogo.png" alt="squash_app" class="img-responsive center-block" data-project="1"></a>
-                    </div>
-                    <div class="col-md-3 col-xs-6 logo">
-                        <a href="#2"><p class="icon-sportzweekly text-center" data-project="2">
-                            SPORTZWEEKLY
-                        </p></a>
-                    </div>
-                    <div class="col-md-3 col-xs-6 logo">
-                        <a href="#3"><img src="assets/images/fly.png" alt="fly_to_the_limit" class="img-responsive center-block" data-project="3"></a>
-                    </div>
-                    <div class="col-md-3 col-xs-6 logo">
-                        <a href="#4"><img src="assets/images/logo2.png" alt="breads_by_josef" class="img-responsive center-block bj-logo" data-project="4"></a>
+                <div class="row">
+                    <div class="col-md-12 row-eq-height">
+                        <div class="col-md-3 col-xs-6 logo">
+                            <a href="#1"><img src="assets/images/sqlogo.png" alt="squash_app" class="img-responsive center-block grow" data-project="1"></a>
+                        </div>
+                        <div class="col-md-3 col-xs-6 logo">
+                            <a href="#2">
+                                <p class="icon-sportzweekly text-center grow" data-project="2">
+                                    SPORTZWEEKLY
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-xs-6 logo">
+                            <a href="#3"><img src="assets/images/fly.png" alt="fly_to_the_limit" class="img-responsive center-block grow" data-project="3"></a>
+                        </div>
+                        <div class="col-md-3 col-xs-6 logo bj-logo">
+                            <a href="#4"><img src="assets/images/logo2.png" alt="breads_by_josef" class="img-responsive center-block grow" data-project="4"></a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -129,7 +132,7 @@
                     <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
                         <p class="text-center">Web based, mobile booking application for squash clubs. Lets users book courts, enter match scores, view statistics and allows club administrators to make block bookings
                             <br>Built using Laravel 5 - PHP framework.</p>
-                        <div class="text-center"><a class="btn btn-default" href="http://squashapp.rakeshmistry.co.nz/" role="button">View project &raquo;</a></div>
+                        <div class="text-center"><a class="btn btn-default my-btn project-btn" href="http://squashapp.rakeshmistry.co.nz/" role="button">View project &raquo;</a></div>
                     </div>
                     <div class="col-md-12 project-image text-center">
                         <a href="http://squashapp.rakeshmistry.co.nz/"><img src="assets/images/bg-sq.png"></a>
@@ -140,7 +143,7 @@
                     <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
                         <p class="text-center">SportzWeekly is a sports focused news website, which allows registered users to post sports news content. Project submitted for advanced server side studies.
                             <br>Built with PHP using a self-designed framework.</p>
-                        <div class="text-center"><a class="btn btn-default" href="http://sportzweekly.rakeshmistry.co.nz/" role="button">View project &raquo;</a></div>
+                        <div class="text-center"><a class="btn btn-default my-btn project-btn" href="http://sportzweekly.rakeshmistry.co.nz/" role="button">View project &raquo;</a></div>
                     </div>
                     <div class="col-md-12 project-image text-center">
                         <a href="http://sportzweekly.rakeshmistry.co.nz/"><img src="assets/images/bg-sw.png"></a>
@@ -153,7 +156,7 @@
                             A simple web-site for an imaginary scenic flight company - Fly to the Limit, based in Queenstown, NZ.
                             <br>Project demonstrates use of client side languages HTML5, CSS3, Sass and JavaScript.
                         </p>
-                        <div class="text-center"><a class="btn btn-default" href="http://flytothelimit.rakeshmistry.co.nz/" role="button">View project &raquo;</a></div>
+                        <div class="text-center"><a class="btn btn-default my-btn project-btn" href="http://flytothelimit.rakeshmistry.co.nz/" role="button">View project &raquo;</a></div>
                     </div>
                     <div class="col-md-12 project-image text-center">
                         <a href="http://flytothelimit.rakeshmistry.co.nz/"><img src="assets/images/bg-fl.png"></a>
@@ -165,7 +168,7 @@
                         <p class="text-center">
                             A Web communication project to create a website proposal for Breads By Josef. Project demonstrates rationalising design with content layout, usability and conceptualising ideas using wireframes and mockups.
                         </p>
-                        <div class="text-center"><a class="btn btn-default" href="BreadsByJosefProposal.pdf" role="button">View project &raquo;</a></div>
+                        <div class="text-center"><a class="btn btn-default my-btn project-btn" href="BreadsByJosefProposal.pdf" role="button">View project &raquo;</a></div>
                     </div>
                     <div class="col-md-12 project-image text-center">
                         <a href="BreadsByJosefProposal.pdf"><img src="assets/images/bg-bj.png"></a>

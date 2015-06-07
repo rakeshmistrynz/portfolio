@@ -153,11 +153,16 @@ nav {
     font-size: 2.5em;
     line-height: 2.5em;
     margin-bottom: 0.2em;
-    margin-top: 0.2em;
+    margin-top: 0.25em;
     margin-left: 0.5em;
     img {
         width: 2.5em;
     }
+}
+
+.navbar-nav{
+
+	margin: 0;
 }
 
 .navbar-right {
@@ -165,7 +170,19 @@ nav {
 }
 
 .navbar-nav > li > a {
-    line-height: 2em;
+	margin: 0.5em;
+    border-top: none;
+    border: 1px solid transparent;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover{
+
+	background-color: $blue;
+	border: 1px solid $blue;
+	border-radius: 4px;
+	color: $white;
+	font-weight: 900;
 }
 
 @media (min-width: 768px) {
@@ -175,10 +192,48 @@ nav {
     }
 }
 
+.my-btn{
+
+	border-color: $white;
+	border-width: 2px;
+	font-family: "source_sans_prolight";
+	font-weight: bolder;
+	font-size: 1.6em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+}
+
+
+
+.intro-text .project-btn{
+	
+	color: $white;
+	background-color: $blue;
+
+	&:hover{
+
+		background-color: $white;
+		color: $blue;
+		border-color: $white;
+
+	}
+
+}
+
+.intro-text h1, .fx-bg h2, .project h2{
+
+	margin-top: 1em;
+}
+
 .intro-text p {
     color: $white;
     font-size: 1.5em;
     text-align: center;
+}
+
+.intro-text+img{
+
+	padding-left: 2.5em;
 }
 
 .intro-text p:nth-child(2) {
@@ -197,6 +252,24 @@ nav {
 #about-me .row {
     padding-top: 1em;
     padding-bottom: 3em;
+}
+
+.cv-btn{
+	
+	color: $white;
+	background-color: $grey;
+	margin-bottom: 1em;
+	font-size: 1.5em;
+	margin-top: 0.5em;
+
+	&:hover{
+
+		background-color: $white;
+		color: $grey;
+		border-color: $white;
+
+	}
+
 }
 
 .webskills-container {
@@ -243,7 +316,7 @@ nav {
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	padding-bottom: 1em;
 	height: 20em;
 }
@@ -287,6 +360,9 @@ nav {
 	}
 }
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
+
 .project-container {
     
     height: 48em;
@@ -312,6 +388,20 @@ nav {
     position: absolute;
     bottom: -20em;
     width: 100%;
+}
+
+.project-btn{
+
+	border-color: $white;
+	background-color: $blue;
+	color: $white;
+}
+
+.project .btn-default:hover{
+
+	background-color: $white;
+	color: $blue;
+	border-color: $blue;
 }
 
 .carousel-indicators {
@@ -410,11 +500,15 @@ footer {
             font-size: 1.5em;
             display: block;
             width: 100%;
-            margin: 0 0.5em 0 0.5em;
 
             &:visited{
 
                 color: $white;
+            }
+
+            &:hover{
+
+            	text-decoration: none;
             }
 
             @media (min-width: 600px){

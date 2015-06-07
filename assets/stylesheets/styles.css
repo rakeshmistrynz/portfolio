@@ -7508,25 +7508,60 @@ nav ul {
   font-size: 2.5em;
   line-height: 2.5em;
   margin-bottom: 0.2em;
-  margin-top: 0.2em;
+  margin-top: 0.25em;
   margin-left: 0.5em; }
   .navbar-brand img {
     width: 2.5em; }
+
+.navbar-nav {
+  margin: 0; }
 
 .navbar-right {
   margin-right: 0; }
 
 .navbar-nav > li > a {
-  line-height: 2em; }
+  margin: 0.5em;
+  border-top: none;
+  border: 1px solid transparent; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #22a7f0;
+  border: 1px solid #22a7f0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 900; }
 
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: 0; } }
+.my-btn {
+  border-color: #fff;
+  border-width: 2px;
+  font-family: "source_sans_prolight";
+  font-weight: bolder;
+  font-size: 1.6em;
+  padding-right: 1.5em;
+  padding-left: 1.5em; }
+
+.intro-text .project-btn {
+  color: #fff;
+  background-color: #22a7f0; }
+  .intro-text .project-btn:hover {
+    background-color: #fff;
+    color: #22a7f0;
+    border-color: #fff; }
+
+.intro-text h1, .fx-bg h2, .project h2 {
+  margin-top: 1em; }
+
 .intro-text p {
   color: #fff;
   font-size: 1.5em;
   text-align: center; }
+
+.intro-text + img {
+  padding-left: 2.5em; }
 
 .intro-text p:nth-child(2) {
   margin: 0 0 1em 0;
@@ -7541,6 +7576,17 @@ nav ul {
 #about-me .row {
   padding-top: 1em;
   padding-bottom: 3em; }
+
+.cv-btn {
+  color: #fff;
+  background-color: #888;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  margin-top: 0.5em; }
+  .cv-btn:hover {
+    background-color: #fff;
+    color: #888;
+    border-color: #fff; }
 
 .webskills-container li {
   font-weight: bold;
@@ -7579,10 +7625,9 @@ nav ul {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   padding-bottom: 1em;
   height: 20em; }
 
@@ -7607,6 +7652,15 @@ nav ul {
     .bj-logo {
       width: 10em; } }
 
+.grow {
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out; }
+
+.grow:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2); }
+
 .project-container {
   height: 48em;
   overflow: hidden; }
@@ -7626,6 +7680,16 @@ nav ul {
   position: absolute;
   bottom: -20em;
   width: 100%; }
+
+.project-btn {
+  border-color: #fff;
+  background-color: #22a7f0;
+  color: #fff; }
+
+.project .btn-default:hover {
+  background-color: #fff;
+  color: #22a7f0;
+  border-color: #22a7f0; }
 
 .carousel-indicators {
   margin: 0;
@@ -7698,10 +7762,11 @@ footer {
       color: #fff;
       font-size: 1.5em;
       display: block;
-      width: 100%;
-      margin: 0 0.5em 0 0.5em; }
+      width: 100%; }
       footer .phone-email a:visited {
         color: #fff; }
+      footer .phone-email a:hover {
+        text-decoration: none; }
       @media (min-width: 600px) {
         footer .phone-email a {
           display: inline;
